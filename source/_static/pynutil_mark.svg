@@ -1,16 +1,49 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 96 96" role="img" aria-label="PyNutil logo mark">
-  <defs>
-    <linearGradient id="g" x1="12" y1="78" x2="78" y2="18" gradientUnits="userSpaceOnUse">
-      <stop offset="0" stop-color="#04b46d"/>
-      <stop offset="0.55" stop-color="#2aa7c8"/>
-      <stop offset="1" stop-color="#ff8a5b"/>
-    </linearGradient>
-  </defs>
-  <circle cx="48" cy="48" r="37" fill="none" stroke="url(#g)" stroke-width="7"/>
-  <path d="M28 56c7-18 29-23 41-8M32 67c9-13 24-15 35-5" fill="none" stroke="#04b46d" stroke-width="5" stroke-linecap="round"/>
-  <circle cx="31" cy="55" r="5" fill="#04b46d"/>
-  <circle cx="68" cy="48" r="5" fill="#2aa7c8"/>
-  <circle cx="66" cy="62" r="5" fill="#ff8a5b"/>
-  <path d="M33 33h30v13H33z" rx="3" fill="#1f2937"/>
-  <path d="M39 40h6m7 0h6" stroke="#fff" stroke-width="3" stroke-linecap="round"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300" role="img" aria-label="Nutil logo">
+  <title>Nutil</title>
+  <path
+    d="M139 39c11-18 57-8 92 17 46 33 67 91 55 141-9 38-35 75-63 72-16-2-19-15-36-14-11 1-13 7-18 12h-39c-5-5-8-11-19-12-17-1-20 12-36 14-28 3-54-34-63-72C0 147 21 89 67 56c35-25 81-35 92-17z"
+    fill="#000"
+  />
+  <path
+    d="M139 39c-22-13-78 2-111 41-30 36-31 84-18 123m129-164c14-14 71-9 108 32 35 39 42 87 28 132"
+    fill="none"
+    stroke="#fff"
+    stroke-width="5"
+    stroke-linecap="round"
+  />
+  <path
+    d="M145 66c-23-18-82-6-116 34-25 29-31 67-23 103m139-137c17-18 78-3 111 36 25 29 31 68 23 101"
+    fill="none"
+    stroke="#fff"
+    stroke-width="5"
+    stroke-linecap="round"
+  />
+  <path
+    d="M155 83c-22-17-78-7-110 27-24 25-34 59-30 94m140-121c18-17 75-5 107 30 22 24 31 57 27 91"
+    fill="none"
+    stroke="#fff"
+    stroke-width="5"
+    stroke-linecap="round"
+  />
+  <path
+    d="M84 242c15 10 28-1 42 4 7 3 9 12 15 18h37c6-6 8-15 15-18 14-5 27 6 42-4 34-23 43-76 23-107-17-27-48-33-68-34-16-1-26 10-40 27-14-17-24-28-40-27-20 1-51 7-68 34-20 31-11 84 23 107 7 5 13 6 19 0z"
+    fill="#fff"
+  />
+  <path
+    d="M92 247c13 6 25-3 38 2 7 3 9 10 14 16h32c5-6 7-13 14-16 13-5 25 4 38-2"
+    fill="none"
+    stroke="#000"
+    stroke-width="5"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+  />
+  <text
+    x="150"
+    y="185"
+    text-anchor="middle"
+    font-family="Arial, Helvetica, sans-serif"
+    font-size="40"
+    font-weight="700"
+    fill="#000"
+  >Nutil</text>
 </svg>
