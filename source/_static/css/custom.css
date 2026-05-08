@@ -110,3 +110,17 @@ body[data-hide-sidebar="true"] .bd-main {
     justify-content: flex-start;
   }
 }
+
+/* Gallery: uniform image height, full image visible */
+.sd-card-img-top {
+  height: 180px;
+  object-fit: contain;
+  object-position: top;
+  background: white;
+}
+
+/* Calb1 card: crop to brain section, skipping the title whitespace */
+img.sd-card-img-top[src*="calb1_cross_section"] {
+  object-fit: cover;
+  object-position: bottom;
+}
