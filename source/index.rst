@@ -1,54 +1,82 @@
 PyNutil
 =======
-a Python library for brain-wide quantification and spatial analysis of features in serial section images from the brain. 
+A Python library for brain-wide quantification and spatial analysis of features
+in serial section images from the brain.
 
 .. grid:: 1 2 2 3
    :gutter: 3
 
-   .. grid-item-card:: :fas:`book;sd-text-primary` Getting Started
+   .. grid-item-card:: :fas:`book;sd-text-primary` User guide
       :link: getting_started
       :link-type: doc
 
-      Installation, supported formats and key concepts.
+      Installation, input formats and the core quantification workflow.
 
    .. grid-item-card:: :fas:`desktop;sd-text-primary` GUI
       :link: gui
       :link-type: doc
 
-      Use PyNutil via the graphical user interface.
+      Run the same atlas-based analyses through the desktop interface.
 
    .. grid-item-card:: :fas:`images;sd-text-primary` Gallery
       :link: demos
       :link-type: doc
 
-      A gallery of examples using PyNutil.
+      3D visualisation, heatmaps and worked Python examples.
 
-.. image:: ../assets/PyNutil_fig1.png
+.. figure:: ../assets/pynutil_workflow.png
    :alt: Overview figure for the PyNutil workflow
+   :class: landing-workflow
    :width: 100%
 
 Overview
 ----------
-PyNutil is able to integrate outputs from various atlas registration software and image segmentation software in order 
-to produce atlas based quantifications, 3D point clouds, and 3D heatmaps of brain derived data. 
+PyNutil connects registration, segmentation and atlas data so that features in
+serial section images can be quantified across the whole brain. It takes outputs
+from tools such as QuickNII, VisuAlign, BrainGlobe registration and common image
+segmentation workflows, then produces atlas-based reports and spatial outputs.
 
-PyNutil aims to replicate and expand the Quantifier feature of the Nutil software (RRID: SCR_017183). 
+PyNutil aims to replicate and expand the Quantifier feature of the Nutil
+software (RRID: SCR_017183) while making the workflow available from Python and
+from a desktop GUI.
 
-.. warning::
+Core workflows
+--------------
 
-   PyNutil is still under development and the API is subject to change.
+.. grid:: 1 2 2 3
+   :gutter: 3
 
-The documentation below brings together installation notes, the basic workflow,
-practical examples, and the generated API reference.
+   .. grid-item-card:: :fas:`shapes;sd-text-primary` Segmentations
+
+      Count labelled objects or pixels in registered section images, then
+      summarise them by atlas region.
+
+   .. grid-item-card:: :fas:`chart-area;sd-text-primary` Intensity images
+
+      Sample image intensity in atlas space for expression maps, tracer signal
+      or other continuous measurements.
+
+   .. grid-item-card:: :fas:`location-dot;sd-text-primary` Point coordinates
+
+      Transform pre-extracted detections into atlas coordinates and quantify
+      their regional distribution.
+
+Outputs
+-------
+
+PyNutil writes CSV reports for regional quantification, MeshView-compatible
+point clouds for spatial inspection, and NIfTI volumes for reconstructed 3D
+heatmaps. The same analysis patterns can be scripted with the Python API or run
+from the GUI.
 
 .. toctree::
    :maxdepth: 2
    :caption: Contents:
 
-   getting_started
+   User guide <getting_started>
    gui
-   demos
-   api_index
+   Examples <demos>
+   API reference <api_index>
 
 Highlights
 ----------
@@ -59,6 +87,10 @@ Highlights
 * Quantify binary segmentations or intensity images against atlas regions.
 * Export point clouds for MeshView and interpolated NIfTI volumes for
   siibra explorer or ITK-SNAP.
+
+.. warning::
+
+   PyNutil is still under development and the API is subject to change.
 
 For more background on the QUINT workflow, see
 `QUINT workflow documentation <https://quint-workflow.readthedocs.io/en/latest/>`_.
