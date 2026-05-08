@@ -96,6 +96,8 @@ exclude_patterns = [
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#options-for-html-output
 html_theme = "pydata_sphinx_theme"
 html_title = "pynutil"
+html_logo = "_static/pynutil_mark.svg"
+html_favicon = "_static/pynutil_mark.svg"
 
 # Customize the theme
 html_theme_options = {
@@ -117,6 +119,9 @@ html_theme_options = {
     "logo": {
         "text": f"{project} v{release}",
     },
+    "navbar_end": ["theme-switcher", "navbar-icon-links"],
+    "footer_start": ["footer_start"],
+    "footer_end": ["footer_end"],
 }
 
 # Redirect the webpage to another URL

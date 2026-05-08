@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 96 96" role="img" aria-label="PyNutil logo mark">
+  <defs>
+    <linearGradient id="g" x1="12" y1="78" x2="78" y2="18" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#04b46d"/>
+      <stop offset="0.55" stop-color="#2aa7c8"/>
+      <stop offset="1" stop-color="#ff8a5b"/>
+    </linearGradient>
+  </defs>
+  <circle cx="48" cy="48" r="37" fill="none" stroke="url(#g)" stroke-width="7"/>
+  <path d="M28 56c7-18 29-23 41-8M32 67c9-13 24-15 35-5" fill="none" stroke="#04b46d" stroke-width="5" stroke-linecap="round"/>
+  <circle cx="31" cy="55" r="5" fill="#04b46d"/>
+  <circle cx="68" cy="48" r="5" fill="#2aa7c8"/>
+  <circle cx="66" cy="62" r="5" fill="#ff8a5b"/>
+  <path d="M33 33h30v13H33z" rx="3" fill="#1f2937"/>
+  <path d="M39 40h6m7 0h6" stroke="#fff" stroke-width="3" stroke-linecap="round"/>
+</svg>
