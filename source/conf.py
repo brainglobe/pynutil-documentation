@@ -124,7 +124,7 @@ html_theme_options = {
 # The default is the URL of the GitHub pages
 # https://www.sphinx-doc.org/en/master/usage/extensions/githubpages.html
 github_user = "brainglobe"
-html_baseurl = f"https://{github_user}.github.io/pynutil-documentation"
+html_baseurl = "https://pynutil.brainglobe.info/"
 sitemap_url_scheme = "{link}"
 
 # Add any paths that contain custom static files (such as style sheets) here,
