@@ -12,18 +12,20 @@ Top-level functions
 
     read_alignment
     load_custom_atlas
+    read_segmentation_dir
+    read_image_dir
     seg_to_coords
     image_to_coords
     xy_to_coords
     quantify_coords
     save_analysis
     interpolate_volume
-    save_volume_niftis
+    save_volumes
 
-Result classes
+Public classes
 --------------
 
-.. currentmodule:: PyNutil.results
+.. currentmodule:: PyNutil
 
 .. autosummary::
     :toctree: api_generated
@@ -32,3 +34,7 @@ Result classes
     AtlasData
     ExtractionResult
     PointSetResult
+    VolumeResult
+    RegistrationData
+    Section
+    ImageSeries
