@@ -137,3 +137,37 @@ sitemap_url_scheme = "{link}"
 # so a file named "default.css" will overwrite the builtin "default.css".
 html_static_path = ["_static"]
 html_css_files = ["css/custom.css"]
+
+
+def _fix_read_alignment_docstring(app, what, name, obj, options, lines):
+    """Replace the malformed v0.6.1 docstring with equivalent valid markup."""
+    if not name.endswith(".read_alignment"):
+        return
+
+    lines[:] = [
+        "Load registration data using the appropriate registered loader.",
+        "",
+        "Parameters",
+        "----------",
+        "path : str",
+        "    Path to the registration file.",
+        "loader_name : str, optional",
+        "    Explicit loader name. By default, PyNutil detects the format.",
+        "apply_deformation : bool",
+        "    Apply deformation data when available.",
+        "apply_damage : bool",
+        "    Apply damage masks when available.",
+        "deformation_provider : DeformationProvider, optional",
+        "    Custom deformation provider.",
+        "damage_provider : DamageProvider, optional",
+        "    Custom damage provider.",
+        "",
+        "Returns",
+        "-------",
+        "RegistrationData",
+        "    Registration data with the requested components applied.",
+    ]
+
+
+def setup(app):
+    app.connect("autodoc-process-docstring", _fix_read_alignment_docstring)

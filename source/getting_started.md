@@ -13,8 +13,9 @@ Install the Python package from PyPI:
 pip install PyNutil
 ```
 
-If you are working from the repository and want to run the bundled demos,
-install the package in editable mode from the repository root:
+If you are working from a checkout of the main PyNutil repository and want to
+run its bundled demos, install the package in editable mode from that
+repository root:
 
 ```bash
 pip install -e .
@@ -319,13 +320,12 @@ image_series = pnt.read_segmentation_dir(
 volumes = pnt.interpolate_volume(
     image_series=image_series,
     registration=registration,
-    colour=[0, 0, 0],
     atlas=atlas,
     value_mode="pixel_count",
     segmentation_mode=True,
 )
 
-pnt.save_volume_niftis(
+pnt.save_volumes(
     output_folder="path/to/output",
     volumes=volumes,
     atlas=atlas,
@@ -343,7 +343,7 @@ If you are interpolating from source images instead of segmentation masks, set
 `ImageSeries`. You can also use `intensity_channel`, `min_intensity`, and
 `max_intensity` to control how intensity values are sampled.
 
-`save_volume_niftis()` writes the generated volumes into:
+`save_volumes()` writes the generated volumes into:
 
 - `interpolated_volume/interpolated_volume.nii.gz`
 - `interpolated_volume/frequency_volume.nii.gz`
@@ -355,12 +355,14 @@ such as ITK-SNAP or siibra explorer.
 ## Worked examples
 
 The main PyNutil repository includes several runnable scripts in `demos/` that
-show the same patterns with real paths and test data. This documentation
-repository also keeps a copy of those scripts in `examples/` for reference.
-These examples assume PyNutil is installed in the current environment:
+show the same patterns with its test data. This documentation repository keeps
+a copy of those scripts in `examples/` for reference. Because the input data
+live in the main PyNutil repository, run these examples from a PyNutil checkout,
+not from the documentation repository:
 
 ```bash
 pip install -e .
+python demos/basic_example.py
 ```
 
 Useful starting points:

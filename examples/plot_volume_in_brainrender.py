@@ -3,7 +3,7 @@ Visualising an interpolated volume in brainrender
 ==================================================
 
 Render a PyNutil-generated NIfTI volume (e.g. from
-:func:`PyNutil.save_volume_niftis`) as a semi-transparent volumetric heatmap
+:func:`PyNutil.save_volumes`) as a semi-transparent volumetric heatmap
 in a brainrender scene.
 
 ``as_surface=False`` uses VTK volume rendering (a true 3-D fog, not a mesh).

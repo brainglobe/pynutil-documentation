@@ -1,4 +1,4 @@
-PyNutil @ git+https://github.com/Neural-Systems-at-UIO/PyNutil.git@main
+PyNutil
 linkify-it-py
 myst-parser
 nbsphinx
